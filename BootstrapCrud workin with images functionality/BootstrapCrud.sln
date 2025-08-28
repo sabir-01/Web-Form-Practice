@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapCrud with image functionality", "BootstrapCrud\BootstrapCrud with image functionality.csproj", "{A91CC146-26CD-469A-A035-7FD115523A1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A91CC146-26CD-469A-A035-7FD115523A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91CC146-26CD-469A-A035-7FD115523A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91CC146-26CD-469A-A035-7FD115523A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91CC146-26CD-469A-A035-7FD115523A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EFB79E8-A273-454A-94E7-FA9C9C4017EC}
+	EndGlobalSection
+EndGlobal

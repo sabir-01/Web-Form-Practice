@@ -121,6 +121,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="ManageOrders.aspx" />
     <Content Include="ManageProducts.aspx" />
     <Content Include="ManageUsers.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -211,6 +212,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ManageOrders.aspx.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageOrders.aspx.designer.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
     </Compile>
     <Compile Include="ManageProducts.aspx.cs">
       <DependentUpon>ManageProducts.aspx</DependentUpon>

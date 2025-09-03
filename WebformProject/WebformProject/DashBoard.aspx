@@ -25,8 +25,8 @@
                     <h5>Menu</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="ManageProducts.aspx"><i class="bi bi-box"></i> Manage Products</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-people"></i> Manage Users</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart-check"></i> Orders</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ManageUsers.aspx"><i class="bi bi-people"></i> Manage Users</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ManageOrders.aspx"><i class="bi bi-cart-check"></i> Orders</a></li>
                     </ul>
                 </div>
 

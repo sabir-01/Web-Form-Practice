@@ -50,24 +50,15 @@ namespace WebformProject
 
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
+
             int userId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
-
             GridViewRow row = GridView1.Rows[e.RowIndex];
-
-            // Username
             string username = ((TextBox)row.Cells[1].Controls[0]).Text;
-
-            // Email
             string email = ((TextBox)row.Cells[2].Controls[0]).Text;
-
-            // Password (TemplateField → must use FindControl!)
             TextBox txtPasswordEdit = (TextBox)row.FindControl("txtPasswordEdit");
-            string password = txtPasswordEdit.Text;
-
-            // Role (TemplateField with DropDownList)
+            string password = txtPasswordEdit.Text;            
             DropDownList ddlRoleEdit = (DropDownList)row.FindControl("ddlRoleEdit");
             string role = ddlRoleEdit.SelectedValue;
-
             using (SqlConnection con = new SqlConnection(cs))
             {
                 string query = "UPDATE Signup SET Username=@Username, Email=@Email, Password=@Password, Role=@Role WHERE UserId=@UserId";
@@ -77,20 +68,17 @@ namespace WebformProject
                 cmd.Parameters.AddWithValue("@Password", password);
                 cmd.Parameters.AddWithValue("@Role", role);
                 cmd.Parameters.AddWithValue("@UserId", userId);
-
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
-
             GridView1.EditIndex = -1;
-            BindUsers(); // reload data
+            BindUsers(); 
         }
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int userId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
-
             using (SqlConnection con = new SqlConnection(cs))
             {
                 con.Open();
@@ -98,7 +86,6 @@ namespace WebformProject
                 cmd.Parameters.AddWithValue("@UserId", userId);
                 cmd.ExecuteNonQuery();
             }
-
             BindUsers();
         }
     }
